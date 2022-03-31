@@ -1,4 +1,5 @@
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faSkype, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faHome, faLink, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
@@ -26,8 +27,35 @@ const Sidebar = () => {
             </nav>
             <ul>
                 <li>
-                    <a href="">
-                        <FontAwesomeIcon icon
+                    <a
+                        target='_blank'
+                        rel='noreferrer'
+                        href="#">
+                        <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        target='_blank'
+                        rel='noreferrer'
+                        href="#">
+                        <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        target='_blank'
+                        rel='noreferrer'
+                        href="#">
+                        <FontAwesomeIcon icon={faYoutube} color='#4d4d4e' />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        target='_blank'
+                        rel='noreferrer'
+                        href="#">
+                        <FontAwesomeIcon icon={faSkype} color='#4d4d4e' />
                     </a>
                 </li>
             </ul>
